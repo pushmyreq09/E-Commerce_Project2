@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+		<listener class-name="com.myshop.utilities.Reporting" />
+	</listeners>
+	
+  <test thread-count="5" name="TestChrome">
+  <parameter name="browser" value="chrome" />
+  <groups>
+  <run>
+     <include name="Smoke"></include>
+     <include name="Sanity"></include>
+     <include name="Regression"></include>
+  </run>
+  </groups>
+  <classes>
+  
+ <!--> <class name="com.myshop.testcases.HomePageTests"/>-->
+  <class name="com.myshop.testcases.LogInTests"/>
+  <!--<class name="com.myshop.testcases.SignInTests"/>-->
+ <!--> <class name="com.myshop.testcases.AcountsPageTests"/>-->
+ <!--><class name="com.myshop.testcases.SearchResultsPageTests"/>-->
+ <!--><class name="com.myshop.testcases.ProductDisplayPageTests"/>-->
+ <!--><class name="com.myshop.testcases.ShoppingCartTests"/>-->
+  
+  </classes>
+  </test> <!-- Test -->
+  
+  <!--    
+   <test thread-count="5" name="Testfirefox">
+  <parameter name="browser" value="firefox" />
+  <groups>
+  <run>
+     <include name="Smoke"></include>
+     <include name="Sanity"></include>
+     <include name="Regression"></include>
+  </run>
+  </groups>
+  <classes>
+  
+   <class name="com.myshop.testcases.HomePageTests"/>
+   <class name="com.myshop.testcases.LogInTests"/>
+   <class name="com.myshop.testcases.SignInTests"/>
+   <class name="com.myshop.testcases.AcountsPageTests"/>
+   <class name="com.myshop.testcases.SearchResultsPageTests"/>
+   <class name="com.myshop.testcases.ProductDisplayPageTests"/>
+   <class name="com.myshop.testcases.ShoppingCartTests"/>
+  
+  </classes>
+  </test>  -->
+  
+ <!--   
+  <test thread-count="5" name="TestEdge">
+  <parameter name="browser" value="edge" />
+  <groups>
+  <run>
+     <include name="Smoke"></include>
+     <include name="Sanity"></include>
+     <include name="Regression"></include>
+  </run>
+  </groups>
+  <classes>
+  
+  <class name="com.myshop.testcases.HomePageTests"/>
+   <class name="com.myshop.testcases.LogInTests"/>
+   <class name="com.myshop.testcases.SignInTests"/>
+   <class name="com.myshop.testcases.AcountsPageTests"/>
+   <class name="com.myshop.testcases.SearchResultsPageTests"/>
+   <class name="com.myshop.testcases.ProductDisplayPageTests"/>
+   <class name="com.myshop.testcases.ShoppingCartTests"/>
+  
+  </classes>
+  </test>  --> 
+  
+  
+</suite> <!-- Suite -->

@@ -1,0 +1,20 @@
+2022-02-01 10:45:52,885 - com.myshop.base.BaseClass -INFO - opened the url
+2022-02-01 10:46:03,190 - com.myshop.base.BaseClass -INFO - clicked on myaccounts
+2022-02-01 10:46:13,115 - com.myshop.base.BaseClass -INFO - entered username and password
+2022-02-01 10:46:13,330 - com.myshop.base.BaseClass -INFO - validating the accounts page title
+2022-02-01 10:46:13,357 - com.myshop.base.BaseClass -INFO - LogIn test passed
+2022-02-01 10:46:33,947 - com.myshop.base.BaseClass -INFO - opened the url
+2022-02-01 10:46:38,283 - com.myshop.base.BaseClass -INFO - clicked on myaccounts
+2022-02-01 10:46:43,935 - com.myshop.base.BaseClass -INFO - entered username and password
+2022-02-01 10:46:43,960 - com.myshop.base.BaseClass -INFO - validating the accounts page title
+2022-02-01 10:46:43,989 - com.myshop.base.BaseClass -INFO - LogIn test failed
+2022-02-01 10:46:55,925 - com.myshop.base.BaseClass -INFO - opened the url
+2022-02-01 10:47:01,332 - com.myshop.base.BaseClass -INFO - clicked on myaccounts
+2022-02-01 10:47:07,218 - com.myshop.base.BaseClass -INFO - entered username and password
+2022-02-01 10:47:07,235 - com.myshop.base.BaseClass -INFO - validating the accounts page title
+2022-02-01 10:47:07,236 - com.myshop.base.BaseClass -INFO - LogIn test failed
+2022-02-01 10:47:17,831 - com.myshop.base.BaseClass -INFO - opened the url
+2022-02-01 10:47:22,243 - com.myshop.base.BaseClass -INFO - clicked on myaccounts
+2022-02-01 10:47:27,412 - com.myshop.base.BaseClass -INFO - entered username and password
+2022-02-01 10:47:27,430 - com.myshop.base.BaseClass -INFO - validating the accounts page title
+2022-02-01 10:47:27,430 - com.myshop.base.BaseClass -INFO - LogIn test failed
