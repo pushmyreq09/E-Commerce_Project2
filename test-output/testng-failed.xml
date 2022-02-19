@@ -6,21 +6,14 @@
   </listeners>
   <test thread-count="5" name="TestChrome(failed)">
     <parameter name="browser" value="chrome"/>
-    <groups>
-      <run>
-        <include name="Smoke"/>
-        <include name="Sanity"/>
-        <include name="Regression"/>
-      </run>
-    </groups>
     <classes>
-      <class name="com.myshop.testcases.LogInTests">
+      <class name="com.myshop.testcases.SearchResultsPageTests">
         <methods>
-          <include name="logInTest1" invocation-numbers="0 1 2"/>
+          <include name="productComparison"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.myshop.testcases.LogInTests -->
+      </class> <!-- com.myshop.testcases.SearchResultsPageTests -->
     </classes>
   </test> <!-- TestChrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

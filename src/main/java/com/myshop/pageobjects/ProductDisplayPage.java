@@ -8,64 +8,56 @@ import org.openqa.selenium.support.PageFactory;
 import com.myshop.actionsdriver.Myactions;
 import com.myshop.base.BaseClass;
 
-public class ProductDisplayPage extends BaseClass 
-{
-WebDriver Ldriver;//our local driver
-	
-	public ProductDisplayPage(WebDriver rdriver)//this is our remote driver
-	{
-		Ldriver=rdriver;
-		PageFactory.initElements(rdriver,this);//specifying page factory class
-	}
-        
-        Myactions actions=new Myactions();
-        
-        @FindBy(xpath="//div[@class='zoomContainer']")
-        WebElement ProductDisplay;
-        
-        @FindBy(id="product-price-3")
-        WebElement PriceDisplay;
-        
-        @FindBy(xpath="//div[@class='qty-wrapper']/input")
-        WebElement EnterQuantity;
-        
-        @FindBy(xpath="//button[@title='Add to Cart']")
-        WebElement AddToCartbtn;
-        
-        @FindBy(xpath="//div[@class='product-name']/span")
-        WebElement ProductName;
-        
-        public boolean ProductImage()
-        {
-          return actions.isDisplayed(driver, ProductDisplay);
-        }
-        
-        public boolean ProductName()
-        {
-          return actions.isDisplayed(driver, ProductName);
-        }
-      
-        public boolean Price()
-        {
-          return actions.isDisplayed(driver, PriceDisplay);
-        }
-        
-        public void enterQuantity(String Qty)
-        {
-        	actions.selectBySendkeys(Qty, EnterQuantity);
-        }
-        
-        public ShoppingCartPage addtocartbtn()
-        {
-        	actions.click(driver, AddToCartbtn);
-        	return new ShoppingCartPage(driver);
-        }
-        
-        public String ValidateTitle()
-        {
-            return actions.getTitle(driver);
-        	
-        }
+public class ProductDisplayPage extends BaseClass {
+	WebDriver Ldriver;// our local driver
 
+	public ProductDisplayPage(WebDriver rdriver)// this is our remote driver
+	{
+		Ldriver = rdriver;
+		PageFactory.initElements(rdriver, this);// specifying page factory class
+	}
+
+	Myactions actions = new Myactions();
+
+	@FindBy(xpath = "//div[@class='zoomContainer']")
+	private WebElement ProductDisplay;
+
+	@FindBy(id = "product-price-3")
+	private WebElement PriceDisplay;
+
+	@FindBy(xpath = "//div[@class='qty-wrapper']/input")
+	private WebElement EnterQuantity;
+
+	@FindBy(xpath = "//button[@title='Add to Cart']")
+	private WebElement AddToCartbtn;
+
+	@FindBy(xpath = "//div[@class='product-name']/span")
+	private WebElement ProductName;
+
+	public boolean ProductImage() {
+		return actions.isDisplayed(driver, ProductDisplay);
+	}
+
+	public boolean ProductName() {
+		return actions.isDisplayed(driver, ProductName);
+	}
+
+	public boolean Price() {
+		return actions.isDisplayed(driver, PriceDisplay);
+	}
+
+	public void enterQuantity(String Qty) {
+		actions.selectBySendkeys(Qty, EnterQuantity);
+	}
+
+	public ShoppingCartPage addtocartbtn() {
+		actions.click(driver, AddToCartbtn);
+		return new ShoppingCartPage(driver);
+	}
+
+	public String ValidateTitle() {
+		return actions.getTitle(driver);
+
+	}
 
 }

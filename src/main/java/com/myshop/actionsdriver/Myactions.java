@@ -33,7 +33,6 @@ public class Myactions extends BaseClass implements ActionsInterface {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", ele);
 
-		
 	}
 
 	@Override
@@ -42,7 +41,6 @@ public class Myactions extends BaseClass implements ActionsInterface {
 		Actions act = new Actions(driver);
 		act.moveToElement(ele).click().build().perform();
 
-		
 	}
 
 	@Override
@@ -61,7 +59,7 @@ public class Myactions extends BaseClass implements ActionsInterface {
 			System.out.println("Not displayed ");
 		}
 		return flag;
-		
+
 	}
 
 	@Override
@@ -158,7 +156,7 @@ public class Myactions extends BaseClass implements ActionsInterface {
 			return false;
 		} finally {
 			if (flag) {
-				System.out.println("Select value from the DropDown");		
+				System.out.println("Select value from the DropDown");
 			} else {
 				System.out.println("Not Selected value from the DropDown");
 				// throw new ElementNotFoundException("", "", "")
@@ -431,14 +429,14 @@ public class Myactions extends BaseClass implements ActionsInterface {
 			return true;
 
 		} catch (Exception e) {
-		
+
 			return false;
-			
+
 		} finally {
 			if (flag) {
-				System.out.println("Draggable Action is performed on \""+source+"\"");			
-			} else if(!flag) {
-				System.out.println("Draggable action is not performed on \""+source+"\"");
+				System.out.println("Draggable Action is performed on \"" + source + "\"");
+			} else if (!flag) {
+				System.out.println("Draggable action is not performed on \"" + source + "\"");
 			}
 		}
 	}
@@ -457,7 +455,7 @@ public class Myactions extends BaseClass implements ActionsInterface {
 		} finally {
 			if (flag) {
 				System.out.println("DragAndDrop Action is performed");
-			} else if(!flag) {
+			} else if (!flag) {
 				System.out.println("DragAndDrop Action is not performed");
 			}
 		}
@@ -517,16 +515,16 @@ public class Myactions extends BaseClass implements ActionsInterface {
 
 			String[] array = windowList.toArray(new String[0]);
 
-			driver.switchTo().window(array[count-1]);
+			driver.switchTo().window(array[count - 1]);
 
-			if (driver.getTitle().contains(windowTitle)){
+			if (driver.getTitle().contains(windowTitle)) {
 				flag = true;
-			}else{
+			} else {
 				flag = false;
 			}
 			return flag;
 		} catch (Exception e) {
-			//flag = true;
+			// flag = true;
 			return false;
 		} finally {
 			if (flag) {
@@ -543,8 +541,8 @@ public class Myactions extends BaseClass implements ActionsInterface {
 		boolean flag = false;
 		try {
 
-			Set<String> s=driver.getWindowHandles();
-			Object popup[]=s.toArray();
+			Set<String> s = driver.getWindowHandles();
+			Object popup[] = s.toArray();
 			driver.switchTo().window(popup[1].toString());
 			flag = true;
 			return flag;
@@ -553,7 +551,7 @@ public class Myactions extends BaseClass implements ActionsInterface {
 			return flag;
 		} finally {
 			if (flag) {
-				System.out.println("Window is Navigated with title");				
+				System.out.println("Window is Navigated with title");
 			} else {
 				System.out.println("The Window with title: is not Selected");
 			}
@@ -566,8 +564,8 @@ public class Myactions extends BaseClass implements ActionsInterface {
 		boolean flag = false;
 		try {
 
-			Set<String> s=driver.getWindowHandles();
-			Object popup[]=s.toArray();
+			Set<String> s = driver.getWindowHandles();
+			Object popup[] = s.toArray();
 			driver.switchTo().window(popup[0].toString());
 			flag = true;
 			return flag;
@@ -576,7 +574,7 @@ public class Myactions extends BaseClass implements ActionsInterface {
 			return flag;
 		} finally {
 			if (flag) {
-				System.out.println("Focus navigated to the window with title");			
+				System.out.println("Focus navigated to the window with title");
 			} else {
 				System.out.println("The Window with title: is not Selected");
 			}
@@ -623,8 +621,8 @@ public class Myactions extends BaseClass implements ActionsInterface {
 			ex.printStackTrace();
 		} finally {
 			if (!presentFlag) {
-				System.out.println("The Alert is handled successfully");		
-			} else{
+				System.out.println("The Alert is handled successfully");
+			} else {
 				System.out.println("There was no alert to handle");
 			}
 		}
@@ -644,9 +642,9 @@ public class Myactions extends BaseClass implements ActionsInterface {
 			return false;
 		} finally {
 			if (flag) {
-				System.out.println("Successfully launched \""+url+"\"");				
+				System.out.println("Successfully launched \"" + url + "\"");
 			} else {
-				System.out.println("Failed to launch \""+url+"\"");
+				System.out.println("Failed to launch \"" + url + "\"");
 			}
 		}
 	}
@@ -654,15 +652,13 @@ public class Myactions extends BaseClass implements ActionsInterface {
 	@Override
 	public boolean isAlertPresent(WebDriver driver) {
 		// TODO Auto-generated method stub
-		try 
-		{ 
-			driver.switchTo().alert(); 
-			return true; 
-		}   // try 
-		catch (NoAlertPresentException Ex) 
-		{ 
-			return false; 
-		}   // catch 
+		try {
+			driver.switchTo().alert();
+			return true;
+		} // try
+		catch (NoAlertPresentException Ex) {
+			return false;
+		} // catch
 	}
 
 	@Override
@@ -672,7 +668,7 @@ public class Myactions extends BaseClass implements ActionsInterface {
 
 		String text = driver.getCurrentUrl();
 		if (flag) {
-			System.out.println("Current URL is: \""+text+"\"");
+			System.out.println("Current URL is: \"" + text + "\"");
 		}
 		return text;
 	}
@@ -684,7 +680,7 @@ public class Myactions extends BaseClass implements ActionsInterface {
 
 		String text = driver.getTitle();
 		if (flag) {
-			System.out.println("Title of the page is: \""+text+"\"");
+			System.out.println("Title of the page is: \"" + text + "\"");
 		}
 		return text;
 	}
@@ -701,9 +697,9 @@ public class Myactions extends BaseClass implements ActionsInterface {
 			return false;
 		} finally {
 			if (flag) {
-				System.out.println("Able to click on \""+locatorName+"\"");
+				System.out.println("Able to click on \"" + locatorName + "\"");
 			} else {
-				System.out.println("Click Unable to click on \""+locatorName+"\"");
+				System.out.println("Click Unable to click on \"" + locatorName + "\"");
 			}
 		}
 	}
@@ -711,41 +707,37 @@ public class Myactions extends BaseClass implements ActionsInterface {
 	@Override
 	public void fluentWait(WebDriver driver, WebElement element, int timeOut) {
 		// TODO Auto-generated method stub
-		 Wait<WebDriver> wait = null;
-		    try {
-		        wait = new FluentWait<WebDriver>((WebDriver) driver)
-		        		.withTimeout(Duration.ofSeconds(timeOut))
-		        	    .pollingEvery(Duration.ofSeconds(2))
-		        	    .ignoring(Exception.class);
-		        wait.until(ExpectedConditions.visibilityOf(element));
-		        element.click();
-		    }catch(Exception e) {
-		    }
-		
+		Wait<WebDriver> wait = null;
+		try {
+			wait = new FluentWait<WebDriver>((WebDriver) driver).withTimeout(Duration.ofSeconds(timeOut))
+					.pollingEvery(Duration.ofSeconds(2)).ignoring(Exception.class);
+			wait.until(ExpectedConditions.visibilityOf(element));
+			element.click();
+		} catch (Exception e) {
+		}
+
 	}
 
 	@Override
 	public void implicitWait(WebDriver driver, int timeOut) {
 		// TODO Auto-generated method stub
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeOut));
-	
-		
+
 	}
 
 	@Override
 	public void explicitWait(WebDriver driver, WebElement element, int timeOut) {
 		// TODO Auto-generated method stub
-		WebDriverWait wait = new WebDriverWait(driver,timeOut);
+		WebDriverWait wait = new WebDriverWait(driver, timeOut);
 		wait.until(ExpectedConditions.visibilityOf(element));
-		
+
 	}
 
 	@Override
 	public void pageLoadTimeOut(WebDriver driver, int timeOut) {
 		// TODO Auto-generated method stub
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(timeOut));
-	
-		
+
 	}
 
 	@Override
@@ -762,8 +754,8 @@ public class Myactions extends BaseClass implements ActionsInterface {
 			e.getMessage();
 		}
 		// This new path for jenkins
-		String newImageString = "http://localhost:8082/job/MyStoreProject/ws/MyStoreProject/ScreenShots/" + filename + "_"
-				+ dateName + ".png";
+		String newImageString = "http://localhost:8082/job/MyStoreProject/ws/MyStoreProject/ScreenShots/" + filename
+				+ "_" + dateName + ".png";
 		return newImageString;
 	}
 
@@ -773,7 +765,5 @@ public class Myactions extends BaseClass implements ActionsInterface {
 		String currentDate = new SimpleDateFormat("yyyy-MM-dd-hhmmss").format(new Date());
 		return currentDate;
 	}
-	
-	
 
 }

@@ -18,3 +18,57 @@
 2022-02-01 10:47:27,412 - com.myshop.base.BaseClass -INFO - entered username and password
 2022-02-01 10:47:27,430 - com.myshop.base.BaseClass -INFO - validating the accounts page title
 2022-02-01 10:47:27,430 - com.myshop.base.BaseClass -INFO - LogIn test failed
+2022-02-14 11:39:38,980 - com.myshop.base.BaseClass -INFO - Opened the url
+2022-02-14 11:39:41,939 - com.myshop.base.BaseClass -INFO - validating logo
+2022-02-14 11:39:42,003 - com.myshop.base.BaseClass -INFO - logo test passed
+2022-02-14 12:15:02,644 - com.myshop.base.BaseClass -INFO - sorting failed
+2022-02-14 12:23:26,760 - com.myshop.base.BaseClass -INFO - sorting failed
+2022-02-14 12:36:00,537 - com.myshop.base.BaseClass -INFO - sorting failed
+2022-02-14 12:47:23,964 - com.myshop.base.BaseClass -INFO - sorting failed
+2022-02-14 13:09:46,413 - com.myshop.base.BaseClass -INFO - sorting failed
+2022-02-14 13:15:37,613 - com.myshop.base.BaseClass -INFO - Elements are sorted properly
+2022-02-14 19:53:16,828 - com.myshop.base.BaseClass -INFO - getting the list price
+2022-02-14 19:57:02,528 - com.myshop.base.BaseClass -INFO - getting the list price
+2022-02-14 19:57:07,020 - com.myshop.base.BaseClass -INFO - getting the product page price
+2022-02-14 19:57:07,070 - com.myshop.base.BaseClass -INFO - matching the prices
+2022-02-14 19:57:07,265 - com.myshop.base.BaseClass -INFO - price matched
+2022-02-14 20:03:26,263 - com.myshop.base.BaseClass -INFO - Elements are sorted properly
+2022-02-15 13:37:35,407 - com.myshop.base.BaseClass -INFO - setting invalid qty and updating the qty
+2022-02-15 13:37:38,782 - com.myshop.base.BaseClass -INFO - clicking on the empty cart button
+2022-02-15 13:37:40,720 - com.myshop.base.BaseClass -INFO - actual msg is
+2022-02-15 13:37:40,721 - com.myshop.base.BaseClass -INFO - Expected msg is
+2022-02-15 13:37:40,722 - com.myshop.base.BaseClass -INFO - verifying the message
+2022-02-15 13:37:59,263 - com.myshop.base.BaseClass -INFO - setting invalid qty and updating the qty
+2022-02-15 13:38:03,276 - com.myshop.base.BaseClass -INFO - My actual msg
+2022-02-15 13:38:03,277 - com.myshop.base.BaseClass -INFO - Verifying the messages
+2022-02-15 13:38:03,278 - com.myshop.base.BaseClass -INFO - Invalid qty msg test passed
+2022-02-15 16:10:13,271 - com.myshop.base.BaseClass -INFO - Opened the url
+2022-02-15 16:10:13,797 - com.myshop.base.BaseClass -INFO - validating logo
+2022-02-15 16:10:13,821 - com.myshop.base.BaseClass -INFO - logo test passed
+2022-02-15 16:10:28,943 - com.myshop.base.BaseClass -INFO - Opened the url
+2022-02-15 16:10:29,006 - com.myshop.base.BaseClass -INFO - validating the pagetitle
+2022-02-15 16:10:29,007 - com.myshop.base.BaseClass -INFO - logo test passed
+2022-02-15 16:42:02,167 - com.myshop.base.BaseClass -INFO - opened the url
+2022-02-17 16:43:45,529 - com.myshop.base.BaseClass -INFO - opened the url
+2022-02-17 16:44:09,012 - com.myshop.base.BaseClass -INFO - adding products to compare
+2022-02-17 16:44:19,915 - com.myshop.base.BaseClass -INFO - comparing products
+2022-02-17 16:45:54,363 - com.myshop.base.BaseClass -INFO - switched to comparison popup
+2022-02-17 17:04:35,772 - com.myshop.base.BaseClass -INFO - opened the url
+2022-02-17 17:05:28,500 - com.myshop.base.BaseClass -INFO - adding products to compare
+2022-02-17 17:05:39,037 - com.myshop.base.BaseClass -INFO - comparing products
+2022-02-17 17:06:09,810 - com.myshop.base.BaseClass -INFO - switched to comparison popup
+2022-02-17 17:24:40,634 - com.myshop.base.BaseClass -INFO - opened the url
+2022-02-17 17:27:13,475 - com.myshop.base.BaseClass -INFO - adding products to compare
+2022-02-17 17:27:22,196 - com.myshop.base.BaseClass -INFO - comparing products
+2022-02-17 17:28:10,137 - com.myshop.base.BaseClass -INFO - switched to comparison popup
+2022-02-17 17:39:33,359 - com.myshop.base.BaseClass -INFO - opened the url
+2022-02-17 17:42:54,674 - com.myshop.base.BaseClass -INFO - opened the url
+2022-02-17 17:49:52,357 - com.myshop.base.BaseClass -INFO - opened the url
+2022-02-18 15:28:14,757 - com.myshop.base.BaseClass -INFO - opened the url
+2022-02-18 15:28:33,414 - com.myshop.base.BaseClass -INFO - adding products to compare
+2022-02-18 15:28:44,585 - com.myshop.base.BaseClass -INFO - comparing products
+2022-02-18 15:28:44,768 - com.myshop.base.BaseClass -INFO - switched to comparison popup
+2022-02-18 15:54:02,589 - com.myshop.base.BaseClass -INFO - opened the url
+2022-02-18 15:54:24,640 - com.myshop.base.BaseClass -INFO - adding products to compare
+2022-02-18 15:54:34,890 - com.myshop.base.BaseClass -INFO - comparing products
+2022-02-18 15:54:37,893 - com.myshop.base.BaseClass -INFO - switched to comparison popup

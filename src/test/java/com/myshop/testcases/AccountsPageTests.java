@@ -12,28 +12,25 @@ public class AccountsPageTests extends BaseClass {
 	LogInPage LogIn;
 	HomePage Hp;
 	MyAccountsPage MyAccount;
-	
-	
-	@Test(groups="Smoke")
-	public void wishListOptiondisplayTest() throws Throwable
-	{
-		Hp=new HomePage(driver);
+
+	@Test(groups = "Smoke")
+	public void wishListOptiondisplayTest() throws Throwable {
+		Hp = new HomePage(driver);
 		Hp.clickOnAccounts();
-		LogIn=new LogInPage(driver);
-		MyAccount=LogIn.login(username, password);
-		boolean result=MyAccount.validateMyWishList();
+		LogIn = new LogInPage(driver);
+		MyAccount = LogIn.login(username, password);
+		boolean result = MyAccount.validateMyWishList();
 		Assert.assertTrue(result);
 	}
-	@Test(groups="Smoke")
-	public void myOrdersOptionDisplayTest() throws Throwable
-	{
-		Hp=new HomePage(driver);
+
+	@Test(groups = "Smoke")
+	public void myOrdersOptionDisplayTest() throws Throwable {
+		Hp = new HomePage(driver);
 		Hp.clickOnAccounts();
-		LogIn=new LogInPage(driver);
-		MyAccount=LogIn.login(username, password);
-		boolean result=MyAccount.validateOrderHistory();
+		LogIn = new LogInPage(driver);
+		MyAccount = LogIn.login(username, password);
+		boolean result = MyAccount.validateOrderHistory();
 		Assert.assertTrue(result);
 	}
-	
 
 }
